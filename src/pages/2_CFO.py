@@ -67,7 +67,7 @@ def load_demographic_data(file_path, sep=','):
 
 # --- Carregamento e Combinação de Dados ---
 
-df_cfo = load_data('data/Analise-CFO.csv', sep=';')
+df_cfo = load_data('/src/data/Analise-CFO.csv', sep=';')
 df_dem = load_demographic_data('data/cupons_capturados-limpo.csv', sep=',')
 
 # Padronizar a coluna de celular em df_cfo para o merge
