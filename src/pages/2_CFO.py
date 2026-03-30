@@ -17,14 +17,16 @@ from charts import cfo_charts
 
 # Configuração inicial
 st.set_page_config(layout="wide", page_title="Dashboard Financeiro de Cupons - CFO")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+file_path = os.path.join(BASE_DIR, 'data', 'Analise-CEO.csv')
 
 # --- Funções de Carregamento e Pré-processamento de Dados ---
 
 @st.cache_data
-def load_data(file_path, sep=';'):
+def load_data():
     """Carrega e pré-processa os dados de análise CFO."""
     try:
-        df = pd.read_csv(file_path, sep=sep, decimal=',')
+        df = pd.read_csv(file_path, sep=";", decimal=',')
         
         # Tratamento de colunas numéricas (removendo pontos como separador de milhar e convertendo para float)
         if 'valor_compra' in df.columns:
