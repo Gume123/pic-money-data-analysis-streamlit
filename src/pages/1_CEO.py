@@ -6,7 +6,7 @@ import re
 
 # Adiciona a pasta charts ao path para importar os gráficos
 sys.path.append(os.path.abspath("charts"))
-import ceo_charts
+from charts import ceo_charts
 
 # Configurações da página
 st.set_page_config(page_title="Dashboard - CEO", layout="wide")

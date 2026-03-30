@@ -13,7 +13,7 @@ import numpy as np
 # └── charts/
 #     └── cfo_charts.py
 sys.path.append(os.path.abspath("charts"))
-import cfo_charts
+from charts import cfo_charts
 
 # Configuração inicial
 st.set_page_config(layout="wide", page_title="Dashboard Financeiro de Cupons - CFO")
