@@ -9,13 +9,6 @@ st.set_page_config(layout="wide", page_title="Dashboard de Parcerias por Loja")
 
 # Adiciona a pasta charts ao path para importar os gráficos
 sys.path.append(os.path.abspath("charts"))
-try:
-    import parcerias_charts
-except ImportError:
-    st.error(
-        "Não foi possível importar o módulo 'parcerias_charts'. Verifique o caminho."
-    )
-    st.stop()
 
 # Caminho para a pasta de dados
 DATA_DIR = "data"

@@ -15,11 +15,11 @@ st.set_page_config(page_title="Dashboard - CEO", layout="wide")
 # Carregando base de dados
 @st.cache_data
 def load_data():
-    df_ceo = pd.read_csv("data/analise-ceo.csv", sep=";")
+    df_ceo = pd.read_csv("data/analise-CEO.csv", sep=";")
     df_teste_em_massa = pd.read_csv(
         "data/teste_em_massa-limpo.csv", sep=",", engine="python"
     )
-    df_cfo = pd.read_csv("data/analise-cfo.csv", sep=";")
+    df_cfo = pd.read_csv("data/analise-CFO.csv", sep=";")
 
     df_mapa = pd.DataFrame()
 
