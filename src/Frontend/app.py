@@ -1,5 +1,5 @@
-import cfo_charts
-import ceo_charts
+from charts import cfo_charts
+from charts import ceo_charts
 import streamlit as st
 import pandas as pd
 import sys
