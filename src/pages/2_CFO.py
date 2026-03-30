@@ -18,7 +18,7 @@ from charts import cfo_charts
 # Configuração inicial
 st.set_page_config(layout="wide", page_title="Dashboard Financeiro de Cupons - CFO")
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-file_path = os.path.join(BASE_DIR, 'data', 'Analise-CEO.csv')
+file_path = os.path.join(BASE_DIR, 'data', 'Analise-CFO.csv')
 
 # --- Funções de Carregamento e Pré-processamento de Dados ---
 
