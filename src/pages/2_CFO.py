@@ -26,7 +26,7 @@ file_path = os.path.join(BASE_DIR, 'data', 'Analise-CFO.csv')
 def load_data():
     """Carrega e pré-processa os dados de análise CFO."""
     try:
-        df = pd.read_csv(file_path, sep=";", decimal=',')
+        df = pd.read_csv("/src/data/Analise-CFO.csv", sep=";", decimal=',')
         
         # Tratamento de colunas numéricas (removendo pontos como separador de milhar e convertendo para float)
         if 'valor_compra' in df.columns:
@@ -50,7 +50,7 @@ def load_data():
 def load_demographic_data(file_path, sep=','):
     """Carrega e pré-processa os dados demográficos."""
     try:
-        df = pd.read_csv(file_path, sep=sep, decimal='.')
+        df = pd.read_csv("/src/data/Analise-CFO.csv", sep=sep, decimal='.')
         
         # Tratamento de colunas
         if 'celular' in df.columns:
